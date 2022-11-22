@@ -1,0 +1,165 @@
+/* Custom classes */
+
+h1 {
+  margin: 2rem 0;
+  color: #1ad5ff;
+}
+
+button.control-btn {
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #dbad05;
+  color: rgb(11, 37, 66);
+  box-shadow: 1px 0px 7px 4px #0496c2;
+  border: none;
+}
+
+button.silence-btn {
+  background-color: yellow;
+}
+
+.control-btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 0px 7px 4px #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.control-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.timer-text {
+  font-size: 10rem;
+  color: #1ad5ff;
+  padding: 1rem;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 1rem;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.close-btn {
+  position: relative;
+  float: right;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #134e80f0;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+.modal-content input {
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.modal-content label {
+  font-weight: bold;
+}
+
+.modal-content button {
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-container {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@media screen and (max-width:600px) {
+  .timer-text {
+    font-size: 5rem;
+    color: #1ad5ff;
+    padding: 1rem;
+  }
+  
+  
+}
+@media screen and (max-width:390px) {
+  .timer-text {
+    font-size: 3rem;
+    color: #1ad5ff;
+    padding: 1rem;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    color: #1ad5ff;
+  }
+  
+}
